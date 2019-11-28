@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <Button
+            android:layout_width="129dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/searchicon"
+            android:id="@+id/scan"
+            android:text="Discovery"
+            android:onClick="onButtonClick" />
+
+        <Button
+            android:layout_width="124dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/rankicon"
+            android:id="@+id/send"
+            android:text="Ranking"
+            android:onClick="onButSendClick" />
+
+        <Button
+            android:layout_width="108dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/collecticon"
+            android:id="@+id/connect"
+            android:text="Collect"
+            android:onClick="onButConnectClick" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="58dp"
+        android:layout_alignParentStart="true">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+
+                        <TextView
+                            android:text="@string/string"
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/stit"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:text="@string/string"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/stat" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tit"
+                            android:text="@string/string"
+                            android:textStyle="bold"/>
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/res"
+                    android:text="@string/string"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
